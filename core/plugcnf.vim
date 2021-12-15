@@ -143,29 +143,57 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-nnoremap <C-n> :NvimTreeToggle<CR>
-nnoremap <leader>r :NvimTreeRefresh<CR>
-nnoremap <leader>n :NvimTreeFindFile<CR>
-" NvimTreeOpen, NvimTreeClose, NvimTreeFocus, NvimTreeFindFileToggle, and NvimTreeResize are also available if you need them
-
 set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
 
 
-
-" Plugin code goes here.
-
 " }}}
 
 
-" MAPPINGS --------------------------------------------------------------- {{{
+" lualine --------------------------------------------------------------- {{{
 
-" Mappings code goes here.
+lua << EOF
+require'lualine'.setup {
+  options = {
+    icons_enabled = true,
+    theme = 'onedark-nvim',
+    disabled_filetypes = {}
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'diff'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  extensions = {}
+}
+EOF
 
 " }}}
 
+" theme ------------------------------------------------------------------ {{{
+lua << EOF
+require('onedark').setup{
+	dark_sidebar = true,
+	--variable_style = "bold",
+	--function_style = "italic",
+	--keyword_style =  "none"
+}
+EOF
+"}}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
 
