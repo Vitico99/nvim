@@ -34,7 +34,7 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <A-t> :Term<CR>
 
 
-"use ctrl+hjkl to riseze the window
+"use ctrl+hjkl to resize the window
 nnoremap <C-j> :resize -2<CR>
 nnoremap <C-k> :resize +2<CR>
 nnoremap <C-h> :vertical resize +2<CR>
