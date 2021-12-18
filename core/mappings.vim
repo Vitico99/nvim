@@ -1,10 +1,7 @@
 " For not pressing shift to enter command mode
 nnoremap ; :
-nnoremap ; :
 
 " Text navigation
-nnoremap j gj " move down by visual line
-nnoremap k gk " move up by visual line
 nnoremap gk k
 nnoremap gj j
 
