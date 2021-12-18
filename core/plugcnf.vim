@@ -143,7 +143,6 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-set termguicolors " this variable must be enabled for colors to be applied properly
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
@@ -158,7 +157,7 @@ lua << EOF
 require'lualine'.setup {
   options = {
     icons_enabled = true,
-    theme = 'onedark-nvim',
+    theme = 'tokyonight',
     disabled_filetypes = {}
   },
   sections = {
@@ -182,18 +181,10 @@ require'lualine'.setup {
 }
 EOF
 
-" }}}
-
-" theme ------------------------------------------------------------------ {{{
-lua << EOF
-require('onedark').setup{
-	dark_sidebar = true,
-	--variable_style = "bold",
-	--function_style = "italic",
-	--keyword_style =  "none"
-}
-EOF
 "}}}
+
+
+
 
 " VIMSCRIPT -------------------------------------------------------------- {{{
 

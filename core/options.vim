@@ -10,5 +10,4 @@ set tabstop=4 " Number of spaces for tabs
 set softtabstop=4
 
 set mouse=a
-set termguicolors
 set cuc

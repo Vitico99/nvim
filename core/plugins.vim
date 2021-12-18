@@ -10,5 +10,5 @@ Plug 'preservim/tagbar' "Tagbar for code navigation
 Plug 'terryma/vim-multiple-cursors' "CTRL + N for multiple cursors
 Plug 'neoclide/coc.nvim' "Auto completion
 Plug 'hoob3rt/lualine.nvim' "status bar
-Plug 'ful1e5/onedark.nvim' "color theme
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
