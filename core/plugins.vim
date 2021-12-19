@@ -8,7 +8,7 @@ Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'tc50cal/vim-terminal' " Vim terminal
 Plug 'preservim/tagbar' "Tagbar for code navigation
 Plug 'terryma/vim-multiple-cursors' "CTRL + N for multiple cursors
-Plug 'neoclide/coc.nvim' "Auto completion
+Plug 'neoclide/coc.nvim', { 'branch': 'release' } "Auto completion
 Plug 'hoob3rt/lualine.nvim' "status bar
 Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 call plug#end()
